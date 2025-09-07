@@ -30,7 +30,7 @@ def addDaysOnTrip(days):
     return daysOnTrip
 
 def wagesForCrew(daysOnTrip, wages):
-    
+    return 0
 
     
 

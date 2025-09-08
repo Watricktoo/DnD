@@ -6,7 +6,12 @@ import tkinter as tk
 master = tk.Tk()
 #Title of Page
 master.title('Ship Funds Calculator')
+#testing labels
+l1 = tk.Label(text="Test",fg="black", bg="white")
+l2 = tk.Label(text="Test",fg="black", bg="white")
 
+l1.pack()
+l2.pack()
 #Creating enterbox for Shipfunds
 #label = Label(master, text='Ship Funds Total').grid(row=0)
 #Wages for each member

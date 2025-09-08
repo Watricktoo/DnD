@@ -33,6 +33,7 @@ def wagesForCrew(daysOnTrip, wages):
     return 0
 
 test = "test"
+print(test)
 #Calculating trip wages
 
     

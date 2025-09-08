@@ -15,6 +15,13 @@ wages = {
     'Wizards' : 2,
 }
 
+crew = {
+    'Sailors' : 2,
+    'Skilled Sailors' : 2,
+    'Marines' : 2,
+    'Officers' : 2,
+    'Wizards' : 2,
+}
 #Total Money on ship
 shipFundTotal = 0
 daysOnTrip = 0
@@ -32,11 +39,14 @@ def addDaysOnTrip(days):
 
 
 #Calculating trip wages
-def calculateCrewWages(days, wages):
-    print(wages['Sailors'])
-    print(wages['Skilled Sailors'])
-    print(wages['Marines'])
-    print(wages['Officers'])
-    print(wages['Wizards'])
+def calculateCrewWages(days, wages, crew):
+    costOfSailor = days * wages['Sailors']
+    costOfSkilledSailor = days * wages['Skilled Sailors']
+    costOfMarine = days * wages['Marines']
+    costOfOfficer= days * wages['Officers']
+    costOfWizard = days * wages['Wizards']
 
-calculateCrewWages(1, wages)
+    print(f"Each Officer gets {costOfOfficer} and each Wizard gets {costOfWizard}")
+
+
+calculateCrewWages(1, wages, crew)

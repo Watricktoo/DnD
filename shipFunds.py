@@ -50,7 +50,7 @@ def calculateCrewWages(days, wages, crew):
 
     costOfSailors = costOfSailor * crew['Sailors']
     costOfSkillerSailors = costOfSkilledSailor * crew['Skilled Sailors']
-    costOfMarines = costOfMarine * crew["Marine"]
+    costOfMarines = costOfMarine * crew["Marines"]
     costOfOfficers = costOfOfficer * crew["Officers"]
     costOfWizards = costOfWizard * crew["Wizards"]
 

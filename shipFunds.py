@@ -29,12 +29,14 @@ def addDaysOnTrip(days):
     daysOnTrip += days
     return daysOnTrip
 
-def wagesForCrew(daysOnTrip, wages):
-    return 0
 
-test = "test"
-print(test)
+
 #Calculating trip wages
+def calculateCrewWages(days, wages):
+    print(wages['Sailors'])
+    print(wages['Skilled Sailors'])
+    print(wages['Marines'])
+    print(wages['Officers'])
+    print(wages['Wizards'])
 
-    
-    
+calculateCrewWages(1, wages)

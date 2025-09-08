@@ -1,11 +1,14 @@
-## Calculator for Ship Funds
+## Calculator for Ship Funds 
+#Imports
+import tkinter as tk
 
-#Global Costs Variables
-#*ship_Passage = .5
-#messages_Dock_Master = 2
-#messages_Addressed = 5
-#docking_cost = 10
+#TK information
+master = tk.Tk()
+#Title of Page
+master.title('Ship Funds Calculator')
 
+#Creating enterbox for Shipfunds
+#label = Label(master, text='Ship Funds Total').grid(row=0)
 #Wages for each member
 wages = {
     'Sailors' : 0.2,
@@ -15,6 +18,7 @@ wages = {
     'Wizards' : 2,
 }
 
+#Number of staffing for each crew type
 crew = {
     'Sailors' : 2,
     'Skilled Sailors' : 2,

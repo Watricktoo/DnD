@@ -46,7 +46,15 @@ def calculateCrewWages(days, wages, crew):
     costOfOfficer= days * wages['Officers']
     costOfWizard = days * wages['Wizards']
 
-    print(f"Each Officer gets {costOfOfficer} and each Wizard gets {costOfWizard}")
+    print(f"Each Officer gets {costOfOfficer} gold and each Wizard gets {costOfWizard} gold")
 
+    costOfSailors = costOfSailor * crew['Sailors']
+    costOfSkillerSailors = costOfSkilledSailor * crew['Skilled Sailors']
+    costOfMarines = costOfMarine * crew["Marine"]
+    costOfOfficers = costOfOfficer * crew["Officers"]
+    costOfWizards = costOfWizard * crew["Wizards"]
 
-calculateCrewWages(1, wages, crew)
+    totalCrewWages = costOfSailors + costOfSkillerSailors + costOfMarines + costOfOfficers + costOfWizards
+    print(f"The crew cost a total of {totalCrewWages} in wages for this voyage")
+    return totalCrewWages
+totalCrewWages = calculateCrewWages(1, wages, crew)
